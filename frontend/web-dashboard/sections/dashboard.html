@@ -1,0 +1,69 @@
+<section class="hero">
+
+    <h1>
+        Expense Reports
+        <br>
+        <span>Made Smarter</span>
+    </h1>
+
+    <p>
+        Automate receipt processing, approvals,
+        and reporting using Azure AI.
+    </p>
+
+</section>
+
+<!-- Statistics -->
+
+<div class="stats">
+
+    <div class="card">
+        <h3>Total Expenses</h3>
+        <h2 id="totalExpenses">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Spend</h3>
+        <h2 id="totalAmount">$0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Approved</h3>
+        <h2 id="approvedCount">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <h2 id="pendingCount">0</h2>
+    </div>
+
+</div>
+
+
+
+<!-- Recent Expenses -->
+
+<div class="table-container">
+
+    <h2>Recent Expenses</h2>
+
+    <br>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Merchant</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="expenseTable">
+            <!-- Expenses will be inserted here by JavaScript -->
+        </tbody>
+
+    </table>
+
+</div>

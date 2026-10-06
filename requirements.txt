@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-dotenv
+opencv-python
+pillow
+azure-ai-documentintelligence
+azure-identity
+azure-storage-blob
+pyodbc
+pandas
+numpy
+python-multipart
+azure-ai-agents
+azure-ai-projects

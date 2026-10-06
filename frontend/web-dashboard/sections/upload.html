@@ -1,0 +1,38 @@
+<section class="hero">
+    <h1>
+        Upload
+        <span>Receipt</span>
+    </h1>
+
+    <p>
+        Upload a receipt image and let AI extract,
+        categorize, and validate the expense automatically.
+    </p>
+</section>
+
+<div class="table-container">
+
+    <div class="upload-box">
+
+        <input
+            type="file"
+            id="receiptFile"
+            accept=".png,.jpg,.jpeg,.webp"
+        >
+
+        <br><br>
+
+        <button
+            class="btn btn-primary"
+            onclick="uploadReceipt()"
+        >
+            Upload Receipt
+        </button>
+
+    </div>
+
+    <br>
+
+    <div id="uploadResult"></div>
+
+</div>

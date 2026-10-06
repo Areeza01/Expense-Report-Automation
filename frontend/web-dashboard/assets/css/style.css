@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #f5f3ff,
+        #fdf2f8
+    );
+
+    color: #0f172a;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #7c3aed;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #7c3aed;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero span {
+    color: #7c3aed;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto;
+
+    color: #64748b;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Statistics Cards
+========================= */
+
+.stats {
+    max-width: 1300px;
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    color: #7c3aed;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   Table
+========================= */
+
+.table-container {
+    max-width: 1300px;
+    margin: 40px auto;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #7c3aed;
+    color: #ffffff;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+tr {
+    border-bottom: 1px solid #eeeeee;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #ec4899
+    );
+
+    color: #ffffff;
+}
+
+/* =========================
+   File Upload
+========================= */
+
+input[type="file"] {
+    width: 100%;
+
+    padding: 20px;
+
+    border: 2px dashed #7c3aed;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .table-container {
+        margin: 30px 15px;
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
+.approve-btn {
+
+    background: #10B981;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-right: 6px;
+}
+
+.reject-btn {
+
+    background: #EF4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.status-approved {
+
+    color: #10B981;
+
+    font-weight: bold;
+}
+
+.status-pending {
+
+    color: #F59E0B;
+
+    font-weight: bold;
+}
+
+.status-rejected {
+
+    color: #EF4444;
+
+    font-weight: bold;
+}
+.chart-container {
+
+    width: 600px;
+    height: 600px;
+
+    margin: 20px auto;
+}

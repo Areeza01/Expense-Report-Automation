@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExpenseFlow</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            💸 ExpenseFlow
+        </div>
+
+        <div class="nav-links">
+
+            <a
+                href="#"
+                onclick="loadSection('dashboard'); return false;">
+                Dashboard
+            </a>
+
+            <a
+                href="#"
+                onclick="loadSection('upload'); return false;">
+                Upload
+            </a>
+
+            <a
+                href="#"
+                onclick="loadSection('expenses'); return false;">
+                Expenses
+            </a>
+
+            <a
+                href="#"
+                onclick="loadSection('approvals'); return false;">
+                Approvals
+            </a>
+
+            <a
+                href="#"
+                onclick="loadSection('reports'); return false;">
+                Reports
+            </a>
+
+        </div>
+
+    </nav>
+
+    <main id="content"></main>
+
+    <!-- JavaScript files -->
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
